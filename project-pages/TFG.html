@@ -80,34 +80,160 @@
         - Change the 'subheader-text' to whatever header you want for project details
         - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
       -->
-      <div id="project-details">
-        <div class="subheader-text">Project Details / Background</div>
+      <div id="introduction">
+        <div class="subheader-text">Introduction</div>
         <div class="project-details-content">
           <div class="body-text">
-            <strong>Introduction:</strong> This project explores the design and development of a game that leverages procedural generation to create vast, explorable solar systems. Procedural generation techniques allow the creation of unique content dynamically, reducing manual labor while enhancing variability and scalability. The focus is on generating planets, solar systems, and explorable surfaces, ensuring each environment is distinctive and immersive.
+            The rapid growth of the video game industry has led to an increasing need for efficient content generation techniques. Procedural generation has emerged as a key solution, enabling the creation of vast, dynamic environments while reducing development time and costs. This project investigates and implements procedural generation techniques to develop a game prototype focused on exploring procedurally generated solar systems and planets.
           </div>
           <div class="body-text">
-            <strong>Motivation:</strong> With the gaming industry moving towards larger, more detailed worlds, procedural generation has become essential for maintaining cost-effectiveness and innovation. This project draws inspiration from games like Minecraft, No Man’s Sky, and Astroneer, which utilize similar techniques to create dynamic, limitless environments. The aim is to contribute to this field by creating a game that combines solar system exploration and planetary surface adventures.
+            The objective is to create a unique gaming experience where players navigate a solar system in a spacecraft, explore planetary surfaces, and discover diverse biomes, all generated dynamically. This project is rooted in research on procedural generation techniques and their practical application in video game development.
           </div>
+        </div>
+      </div>
+      
+      <div id="research-phase">
+        <div class="subheader-text">Research Phase</div>
+        <div class="project-details-content">
           <div class="body-text">
-            <strong>Technologies Used:</strong> The prototype employs advanced technologies and techniques, including:
+            The research phase involved studying procedural generation techniques widely used in the gaming industry. Key activities included:
             <ul>
-              <li><strong>Noise Maps:</strong> For generating planetary terrain and biomes.</li>
-              <li><strong>Voxels:</strong> To simulate 3D landscapes, caves, and surfaces.</li>
-              <li><strong>Wave Function Collapse:</strong> For creating coherent and non-repetitive structures.</li>
-              <li><strong>ShaderGraphs:</strong> Used for rendering atmospheres, lighting, and planetary details.</li>
+              <li><strong>Review of Procedural Techniques:</strong> Analyzed methods such as Noise Maps, Voxels, Wave Function Collapse, and Marching Cubes to evaluate their strengths, weaknesses, and applicability in game development.</li>
+              <li><strong>Case Studies:</strong> Investigated games like <em>Minecraft</em>, <em>No Man’s Sky</em>, and <em>Astroneer</em>, identifying how procedural generation contributes to their success and gameplay mechanics.</li>
+              <li><strong>Prototyping:</strong> Developed small-scale prototypes to test various techniques, including terrain generation, biome transitions, and 3D rendering, to determine their suitability for the project.</li>
             </ul>
-            Tools like Unity and Blender were essential for the implementation, while compute shaders were leveraged to maximize GPU efficiency for procedural calculations.
           </div>
+       
           <div class="body-text">
-            <strong>Core Features:</strong> The game offers two primary gameplay experiences:
+            As a conclusion to the research phase of the project, a comparative table of technologies was created. This table provides a summary of each technology, outlining their strengths and weaknesses, as well as their common applications. The objective is to offer a quick overview of which technologies can be used effectively in different scenarios, helping to select techniques that provide robust solutions tailored to each project’s needs.
+          </div>
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Technology</th>
+                <th>Main Use</th>
+                <th>Scalability</th>
+                <th>Detail Level</th>
+                <th>Implementation Complexity</th>
+                <th>Resource Requirements</th>
+                <th>Application Examples</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Noise Maps</td>
+                <td>Terrain and biome generation</td>
+                <td>High</td>
+                <td>High</td>
+                <td>Low</td>
+                <td>Moderate</td>
+                <td>Minecraft, Terragen</td>
+              </tr>
+              <tr>
+                <td>Wave Function Collapse</td>
+                <td>Map and texture generation</td>
+                <td>Low</td>
+                <td>Very High</td>
+                <td>Medium</td>
+                <td>High</td>
+                <td>Bad North, Texture Generation</td>
+              </tr>
+              <tr>
+                <td>Cellular Automata</td>
+                <td>Generation of caves and terrains</td>
+                <td>Moderate</td>
+                <td>Medium</td>
+                <td>Medium</td>
+                <td>Moderate to High</td>
+                <td>Brogue, Ecological Simulations</td>
+              </tr>
+              <tr>
+                <td>Voxels</td>
+                <td>3D representation and manipulation</td>
+                <td>High</td>
+                <td>Medium to High</td>
+                <td>High</td>
+                <td>High</td>
+                <td>Minecraft, Voxel-Based Simulations</td>
+              </tr>
+              <tr>
+                <td>L-Systems</td>
+                <td>Plant and structure generation</td>
+                <td>High</td>
+                <td>High</td>
+                <td>Medium</td>
+                <td>Moderate</td>
+                <td>Ecosystem Simulations, Games</td>
+              </tr>
+              <tr>
+                <td>Space Colonization Algorithm (SCA)</td>
+                <td>Generation of plants and trees</td>
+                <td>Moderate</td>
+                <td>Very High</td>
+                <td>Medium</td>
+                <td>Moderate</td>
+                <td>Ecosystem Simulations</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="body-text">
+            The table summarizes how different procedural generation techniques can be applied to achieve effective results, offering insights into their scalability, implementation challenges, and potential uses in projects.
+          </div>
+        </div>
+      </div>
+      
+      <div id="development-phase">
+        <div class="subheader-text">Development Phase</div>
+        <div class="project-details-content">
+          <div class="body-text">
+            The development phase focused on building a functional game prototype using the insights gained during research. Key accomplishments included:
             <ul>
-              <li><strong>Space Exploration:</strong> Navigate a procedurally generated solar system using an intuitive spaceship control system inspired by No Man’s Sky.</li>
-              <li><strong>Planetary Exploration:</strong> Explore the surface of procedurally generated planets as an astronaut, complete with caves, biomes, and material analysis tools.</li>
+              <li><strong>Procedural Solar System Generation:</strong>
+                <ul>
+                  <li>Implemented algorithms to dynamically create solar systems with planets orbiting a central star.</li>
+                  <li>Designed planets with unique features, such as terrain, biomes, and atmospheric conditions.</li>
+                </ul>
+              </li>
+              <li><strong>Planetary Terrain and Biomes:</strong>
+                <ul>
+                  <li>Generated detailed planetary surfaces using multi-layered Noise Maps.</li>
+                  <li>Developed biome-specific characteristics and ensured seamless transitions between different ecosystems.</li>
+                </ul>
+              </li>
+              <li><strong>Gameplay Mechanics:</strong>
+                <ul>
+                  <li>Developed spacecraft controls for intuitive navigation of the solar system.</li>
+                  <li>Implemented astronaut mechanics, including walking, jetpack usage, and material scanning.</li>
+                </ul>
+              </li>
+              <li><strong>Visual and Performance Enhancements:</strong>
+                <ul>
+                  <li>Created realistic visuals using Unity’s ShaderGraph for rendering planets, atmospheres, and lighting effects.</li>
+                  <li>Optimized performance with compute shaders, ensuring smooth gameplay in complex procedural environments.</li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
       </div>
+      
+      <div id="results">
+        <div class="subheader-text">Results</div>
+        <div class="project-details-content">
+          <div class="body-text">
+            The final game prototype successfully demonstrates the potential of procedural generation in creating dynamic, explorable environments. Key outcomes include:
+            <ul>
+              <li>A procedurally generated solar system with planets that can be explored from both space and their surfaces.</li>
+              <li>Engaging gameplay mechanics encouraging exploration through intuitive controls and interactive features like scanning.</li>
+              <li>Efficient performance, maintaining stable frame rates even in complex environments.</li>
+            </ul>
+          </div>
+          <div class="body-text">
+            The prototype received positive feedback during initial testing, with players highlighting the immersive exploration mechanics and seamless transitions between gameplay modes.
+          </div>
+        </div>
+      </div>
+      
 
       <!-- IMAGE GALLERY -->
       <div id="project-gallery">
@@ -138,7 +264,7 @@
                   - IMAGE_CAPTION: to the caption of the image
             -->
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/planet.png" class="gallery-image">
+              <img src="../assets/images/Montain.png" class="gallery-image">
               <span class="image-caption">Generated solar system.</span>
             </div>
             
@@ -148,7 +274,7 @@
               <span class="image-caption">Generated planet example.</span>
             </div>
             <div class="gallery-image-container">
-              <img src="../assets/images/Montain.png" class="gallery-image">
+              <img src="../assets/images/planet.png" class="gallery-image">
               <span class="image-caption">Mountain generation with caves.</span>
             </div>
             
